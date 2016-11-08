@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="10117" systemVersion="15G31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="BYZ-38-t0r">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
+                        <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <stackView opaque="NO" contentMode="scaleToFill" misplaced="YES" axis="vertical" spacing="3" translatesAutoresizingMaskIntoConstraints="NO" id="8h7-jk-Xxo">
+                                <rect key="frame" x="170" y="380" width="360" height="153"/>
+                                <subviews>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="MfF-Ny-Knb">
+                                        <rect key="frame" x="0.0" y="0.0" width="360" height="36"/>
+                                        <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                                        <state key="normal" title="OpenCamera"/>
+                                        <connections>
+                                            <action selector="actionCamera:" destination="BYZ-38-t0r" eventType="touchUpInside" id="LT7-Nd-omF"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="rdV-OV-KSK">
+                                        <rect key="frame" x="0.0" y="39" width="360" height="36"/>
+                                        <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                                        <state key="normal" title="OpenPhotoGallery"/>
+                                        <connections>
+                                            <action selector="actionPhotoGallery:" destination="BYZ-38-t0r" eventType="touchUpInside" id="FHp-ag-tqN"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="g3c-42-0uR">
+                                        <rect key="frame" x="0.0" y="78" width="360" height="36"/>
+                                        <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                                        <state key="normal" title="Mail"/>
+                                        <connections>
+                                            <action selector="actionMail:" destination="BYZ-38-t0r" eventType="touchUpInside" id="xyo-Hx-nef"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="X5X-aX-ouv">
+                                        <rect key="frame" x="0.0" y="117" width="360" height="36"/>
+                                        <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                                        <state key="normal" title="SMS"/>
+                                        <connections>
+                                            <action selector="actionSms:" destination="BYZ-38-t0r" eventType="touchUpInside" id="lGH-aV-UzG"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                                <color key="backgroundColor" red="0.50196081400000003" green="0.0" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                <color key="tintColor" red="0.50196081400000003" green="0.0" blue="0.25098040700000002" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstItem="rdV-OV-KSK" firstAttribute="width" secondItem="MfF-Ny-Knb" secondAttribute="width" id="7gV-3o-7Sw"/>
+                                    <constraint firstItem="X5X-aX-ouv" firstAttribute="width" secondItem="MfF-Ny-Knb" secondAttribute="width" id="T62-am-1Kl"/>
+                                    <constraint firstItem="g3c-42-0uR" firstAttribute="height" secondItem="MfF-Ny-Knb" secondAttribute="height" id="VFg-O3-wOV"/>
+                                    <constraint firstItem="rdV-OV-KSK" firstAttribute="height" secondItem="MfF-Ny-Knb" secondAttribute="height" id="pDw-5r-Fbv"/>
+                                    <constraint firstItem="g3c-42-0uR" firstAttribute="width" secondItem="MfF-Ny-Knb" secondAttribute="width" id="ts7-nt-iD9"/>
+                                    <constraint firstItem="X5X-aX-ouv" firstAttribute="height" secondItem="MfF-Ny-Knb" secondAttribute="height" id="wft-qk-1p4"/>
+                                </constraints>
+                            </stackView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="AqW-5f-XIK">
+                                <rect key="frame" x="0.0" y="0.0" width="600" height="297"/>
+                                <color key="backgroundColor" red="0.29803922770000002" green="0.29803922770000002" blue="0.29803922770000002" alpha="1" colorSpace="calibratedRGB"/>
+                            </imageView>
+                        </subviews>
+                        <color key="backgroundColor" red="0.44601809978485107" green="0.86704158782958984" blue="0.9104275107383728" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="AqW-5f-XIK" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="-20" id="8gm-tJ-FZR"/>
+                            <constraint firstItem="8h7-jk-Xxo" firstAttribute="top" secondItem="AqW-5f-XIK" secondAttribute="bottom" constant="50" id="IHB-3E-jhe"/>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="8h7-jk-Xxo" secondAttribute="bottom" constant="100" id="ZGu-dP-M3g"/>
+                            <constraint firstItem="8h7-jk-Xxo" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="100" id="kry-SA-2fR"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="AqW-5f-XIK" secondAttribute="trailing" constant="-20" id="n08-a3-7Si"/>
+                            <constraint firstItem="AqW-5f-XIK" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="-20" id="onL-bp-jdl"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="8h7-jk-Xxo" secondAttribute="trailing" constant="100" id="vOP-WO-T4h"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="imageView" destination="AqW-5f-XIK" id="7zj-FY-1rQ"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+        </scene>
+    </scenes>
+</document>
